@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stwórz konto</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+
+<body>
+	<%- include('./partials/_header.ejs') %>
+	<%- include('./partials/_navbar.ejs') %>
+
+			<div class="logreg">
+				<form action="/register" method="post" id="accountCreationForm">
+					<div class="form-group">
+						<label for="username">Nazwa Użytkownika:</label>
+						<input type="text" id="username" name="username" required>
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+
+					<div class="form-group">
+						<label for="password">Hasło:</label>
+						<input type="password" id="password" name="password" required>
+					</div>
+
+					<div class="btn-container">
+						<button type="submit" id="submitButton">Stwórz konto</button>
+						<button type="reset" id="resetButton">Wyczyść dane</button>
+					</div>
+				</form>
+
+				<div class="bottom-buttons">
+					<button id="formLoginPageRedirect">Masz już konto?</button>
+					<button id="formIndexPageRedirect">Powrót</button>
+				</div>
+			</div>
+
+			<%- include('./partials/_footer.ejs') %>
+
+			<script src="/javascripts/scripts.js"></script>
+			<script src="/javascripts/formValidation.js"></script>
+</body>
+
+</html>

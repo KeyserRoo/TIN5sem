@@ -1,0 +1,373 @@
+/*
+#3F6AA3
+#576C89
+#6E6E6E
+#857053
+#9C7238
+*/
+
+/*
+=====================================================
+================== popular default ==================
+=====================================================
+*/
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+body {
+	background-color: #3F6AA3;
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	background-color: #9C7238;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+.logreg {
+	background-color: #3F6AA3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer {
+	background-color: #9C7238;
+	color: white;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+nav {
+	background-color: #857053;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+nav a {
+	font-size: 18px;
+	color: #FDFFE2;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.container {
+	flex-grow: 1;
+	overflow-y: auto;
+}
+
+/*
+=========================================
+================== form =================
+=========================================
+*/
+
+form {
+	background-color: #8e8e8e;
+	max-width: 400px;
+	margin: 40px;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
+.form-group label {
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	width: 90%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #6E6E6E;
+	border-radius: 4px;
+}
+
+/*
+===========================================
+================== button =================
+===========================================
+*/
+
+button,
+#navbarLoginPageRedirect,
+#navbarRegisterPageRedirect,
+#navbarIndexPageRedirect {
+	background-color: #2166C1;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+button:hover,
+#navbarLoginPageRedirect:hover,
+#navbarRegisterPageRedirect:hover,
+#navbarIndexPageRedirect:hover {
+	background-color: #135ab6;
+}
+
+button:active,
+#navbarLoginPageRedirect:active,
+#navbarRegisterPageRedirect:active,
+#navbarIndexPageRedirect:active {
+	background-color: #213859;
+}
+
+button:focus {
+	outline: 2px solid #000;
+	outline-offset: 2px;
+}
+
+.bottom-buttons {
+	background-color: #8e8e8e;
+	max-width: 200px;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.bottom-buttons nav a {
+	text-decoration: none;
+	color: white;
+}
+
+.bottom-buttons button a {
+	text-decoration: none;
+	color: white;
+}
+
+/*
+==========================================
+================== combo =================
+==========================================
+*/
+
+select {
+	background-color: #2166C1;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	width: 200px;
+	height: auto;
+	font-size: 18px;
+	text-align: center;
+}
+
+select option {
+	background-color: #2166C1;
+}
+
+select option:hover {
+	background-color: #135ab6;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+select {
+	appearance: none;
+	background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23fdffe2" viewBox="0 0 16 16"%3E%3Cpath d="M7.293 1.293a1 1 0 011.414 0L10 3.586 14.586 9l-4-4-4.586 4z"%3E%3C/svg%3E');
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 16px 16px;
+}
+
+select:not(:placeholder-shown) {
+	background-color: #135ab6;
+}
+
+/*
+==========================================
+================== table =================
+==========================================
+*/
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 20px;
+	border-top: 2px solid #2166C1;
+}
+
+th,
+td {
+	border: 1px solid #6E6E6E;
+	padding: 8px;
+	text-align: left;
+	background-color: #FFFFFF;
+}
+
+th {
+	background-color: #2166C1;
+}
+
+/*
+==========================================
+================== print =================
+==========================================
+*/
+
+@media print {
+
+	header,
+	footer {
+		display: none !important;
+	}
+
+	#navbar {
+		display: none;
+	}
+
+	.content {
+		page-break-after: always;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/*
+===========================================
+================== i made =================
+===========================================
+*/
+
+/*index*/
+.indexmain {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	padding: 20px;
+	height: auto;
+}
+
+.left-panel,
+.center-panel,
+.right-panel {
+	height: auto;
+}
+
+.left-panel {
+	background-color: #6E6E6E;
+}
+
+.center-panel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #6E6E6E;
+}
+
+.right-panel {
+	background-color: #6E6E6E;
+}
+
+#gameimg {
+	padding: 30px;
+	margin: 10px;
+	max-width: 100%;
+	height: auto;
+}
+
+.featured-game,
+.latest-news,
+.popular-games,
+.call-to-action {
+	background-color: #8e8e8e;
+	max-width: 400px;
+	margin-bottom: 20px;
+	padding: 30px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.featured-game img,
+.latest-news ul,
+.popular-games div.game-item,
+.call-to-action button {
+	margin-top: 20px;
+}
+
+.play-now,
+.subscribe-button {
+	background-color: #2166C1;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	transition: background-color 0.3s ease;
+}
+
+.play-now:hover,
+.subscribe-button:hover {
+	background-color: #135ab6;
+}
+
+.game-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.game-item img {
+	width: 60px;
+	height: auto;
+	border-radius: 5px;
+}
+
+.game-item span {
+	font-weight: bold;
+}
+
+.error-container {
+	margin: 20px;
+	padding: 15px;
+	border: 3px solid #fb5667;
+	border-radius: 5px;
+	background-color: #6c1220;
+	color: #fb5667;
+}
+
+.colortests {
+	background-color: #3F6AA3;
+	background-color: #576C89;
+	background-color: #6E6E6E;
+	background-color: #857053;
+	background-color: #9C7238;
+}

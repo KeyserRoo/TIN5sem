@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stwórz konto</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<h1>Stwórz nowe konto</h1>
+	</header>
+
+	<nav id="navbar">
+		<button id="mainbutton">Strona Główna</button>
+		<select id="combobox" onchange="redirect(this.value)">
+			<option value="">Zobacz gry</option>
+			<option value="morris">Młynek</option>
+			<option value="lascars">Laskars</option>
+			<option value="hnef">Hnefatafl</option>
+		</select>
+		<button id="logbutton">Zaloguj się</button>
+		<button id="regbutton">Zarejestruj się</button>
+	</nav>
+
+	<div class="logreg">
+		<form action="/register" method="post">
+			<div class="form-group">
+				<label for="username">Nazwa Użytkownika:</label>
+				<input type="text" id="username" name="username" required>
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</div>
+
+			<div class="form-group">
+				<label for="password">Hasło:</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+
+			<div class="btn-container">
+				<button type="submit">Stwórz konto</button>
+				<button type="reset">Wyczyść dane</button>
+			</div>
+		</form>
+
+		<div class="bottom-buttons">
+			<button id="loginPage">Masz już konto?</button>
+			<button id="mainPage">Powrót</button>
+		</div>
+	</div>
+
+	<footer>
+		<p>Janpolex games &#0153;</p>
+	</footer>
+
+	<script src="scripts.js"></script>
+</body>
+
+</html>

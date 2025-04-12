@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stwórz konto</title>
+</head>
+
+<body>
+	<h1>Stwórz nowe konto</h1>
+
+	<form action="/register" method="post">
+		<label for="username">Nazwa Użytkownika:</label>
+		<input type="text" id="username" name="username" required><br><br>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+
+		<label for="password">Hasło:</label>
+		<input type="password" id="password" name="password" required><br><br>
+
+		<button type="submit">Stwórz konto</button>
+		<button type="reset">Wyczyść dane</button>
+	</form>
+
+	<p>Masz już konto? <a href="loginPage.html">Zaloguj</a></p>
+</body>
+
+</html>

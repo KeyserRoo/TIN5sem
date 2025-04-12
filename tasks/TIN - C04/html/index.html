@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tagmata, gry historyczne</title>
+	<link rel="stylesheet" type="text/css" href="..\css\styles.css">
+</head>
+
+<body>
+	<header>
+		<h1>Strona z grami historycznymi w kiepskim wykonaniu &#58;&#41;</h1>
+	</header>
+
+	<nav id="navbar">
+		<button id="navbarIndexPageRedirect">Strona Główna</button>
+		<select id="combobox" onchange="redirect(this.value)">
+			<option value="">Zobacz gry</option>
+			<option value="morris">Młynek</option>
+			<option value="lascars">Laskars</option>
+			<option value="hnef">Hnefatafl</option>
+		</select>
+		<button id="navbarLoginPageRedirect">Zaloguj się</button>
+		<button id="navbarRegisterPageRedirect">Zarejestruj się</button>
+	</nav>
+
+	<div class="indexmain">
+		<div class="featured-game">
+			<h2>Nowa gra: Młynek</h2>
+			<img 
+				src="photos/free-vector-nine-mens-morris-game-board-clip-art_105069_Nine_Mens_Morris_Game_Board_clip_art_hight.png"
+				alt="morris" width="100">
+			<p>super gra</p>
+			<button onclick="transferSite('examplegame.html')">Zagraj</button>
+		</div>
+
+		<div class="latest-news">
+			<h2>Najnowsze wiadomości</h2>
+			<ul>
+				<li>Nowy update Hnefatafla: zmiana balansu i naprawione błędy</li>
+				<li>Zapisz się na mistrzostwa w Młynek</li>
+				<li>Niedługo wychodzi Kółko i krzyżyk</li>
+			</ul>
+		</div>
+
+		<div class="popular-games">
+			<h2>Popularne Gry</h2>
+			<div class="game-list">
+				<div class="game-item">
+					<img src="https://regencychess.pl/cdn/shop/files/RCPB496.jpg?v=1722641813&width=800" alt="Hnefatafl">
+					<span>Hnefatafl</span>
+				</div>
+				<div class="game-item">
+					<img src="https://www.shutterstock.com/shutterstock/photos/1434346391/display_1500/stock-vector-nine-men-s-morris-board-strategy-game-vector-1434346391.jpg" alt="Laskar">
+					<span>Laskar</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="call-to-action">
+			<h2>Dołącz do społeczności</h2>
+			<p>Zasubskrybuj newsletter</p>
+			<input type="email" placeholder="Twój adres email">
+			<button>Zasubskrybuj</button>
+		</div>
+	</div>
+
+	<footer>
+		<p>Janpolex games &#0153;</p>
+	</footer>
+
+	<script src="..\js\scripts.js"></script>
+</body>
+
+</html>

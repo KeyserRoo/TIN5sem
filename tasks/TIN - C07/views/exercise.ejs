@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Management Exercise</title>
+	<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+	<h1>User Management Exercise</h1>
+
+	<form action="/exercise" method="POST">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" required>
+		<button type="submit">Add User</button>
+	</form>
+
+	<h2>Existing Users:</h2>
+  <table border="1">
+    <tr>
+      <th>ID</th>
+      <th>Username</th>
+      <th>Action</th>
+    </tr>
+    <% users.forEach(user=> { %>
+      <tr>
+        <td><%= user.id %></td>
+        <td><%= user.name %></td>
+        <td>
+          <form action="/exercise/<%= user.id %>" method="POST">
+						<input type="hidden" name="_method" value="DELETE">
+						<button type="submit">Delete</button>
+					</form>
+        </td>
+      </tr>
+    <% }); %>
+  </table>
+</body>
+
+</html>
